@@ -92,6 +92,22 @@ class Social extends Template
     }
 
     /**
+     * Return button label based on login method
+     *
+     * @param $key
+     * @return string
+     */
+    public function getBtnLabel($key)
+    {
+        switch ($key) {
+            case 'facebook':
+                return 'Continue with %1';
+            default:
+                return 'Sign in with %1';
+        }
+    }
+
+    /**
      * @return array
      */
     public function getSocialButtonsConfig()
