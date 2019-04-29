@@ -664,6 +664,11 @@
 
 .btn-facebook .fa-facebook {
     background: url("images/fb-logo.png") no-repeat;
+    background-size: 100%;
+}
+
+.btn-facebook .fa-facebook:before {
+    content: "";
 }
 
 .btn-flickr {
